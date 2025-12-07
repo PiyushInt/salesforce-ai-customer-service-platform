@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is selected when assistance is needed to manage, adjust, or optimize employee schedules.</description>
+    <developerName>p_16jd20000013cEf_Employee_Schedule_Optimization</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__CreateAToDo</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user requests to label a schedule record, use EmployeeCopilot__LabelARecord.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user asks to create a task related to scheduling, use EmployeeCopilot__CreateAToDo.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Employee Schedule Optimization</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist with creating, updating, or labeling employee schedules. You aren&apos;t able to make policy decisions or handle payroll inquiries.</scope>
+</GenAiPlugin>

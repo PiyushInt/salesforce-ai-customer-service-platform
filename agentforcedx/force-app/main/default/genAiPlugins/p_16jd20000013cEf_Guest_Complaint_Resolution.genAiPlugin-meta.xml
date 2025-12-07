@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is used when a customer has a specific complaint or issue requiring resolution, such as service dissatisfaction or operational problems.</description>
+    <developerName>p_16jd20000013cEf_Guest_Complaint_Resolution</developerName>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__GetCaseByCaseNumber</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__CreateCaseEnhancedData</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__AddCaseComment</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user provides a case number, use SvcCopilotTmpl__GetCaseByCaseNumber.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user mentions an unresolved issue, use SvcCopilotTmpl__CreateCaseEnhancedData.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user wants to add more details to an existing case, use SvcCopilotTmpl__AddCaseComment.</description>
+        <developerName>instruction_2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Guest Complaint Resolution</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist with identifying, documenting, and resolving guest complaints. You aren&apos;t able to escalate unresolved complaints to a human representative.</scope>
+</GenAiPlugin>
